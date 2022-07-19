@@ -1,20 +1,24 @@
 import React from 'react'
-import { View, StyleSheet, Image } from 'react-native'
+import { View, StyleSheet, Image, Text } from 'react-native'
 
 const ImagesDemo = () => {
     return (
         <View style={styles.container}>
+            <Text>This is an image</Text>
             <Image style={styles.imageStyle} source={require("../../assets/pexels.jpg")} />
         </View>
     )
 };
 const styles = StyleSheet.create({
     container: {
-        position: "relative"
+        position: "relative",
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center"
     },
     imageStyle: {
-        height: 300,
-        width: 300
+        height: 386,
+        width: 386
     }
 })
 

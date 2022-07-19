@@ -5,7 +5,7 @@ import ImagesDemo from './src/Components/ImagesDemo';
 function App() {
   return (
     <View style={styles.container}>
-      <Home />
+      {/* <Home /> */}
       <ImagesDemo />
     </View>
   );
