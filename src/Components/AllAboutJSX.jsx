@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 const AllAboutJSX = () => {
     let details = {
@@ -8,11 +8,19 @@ const AllAboutJSX = () => {
         degree: "BCA"
     }
     return (
-        < View >
-            <Text>
+        <View>
+            <Text style={styles.container}>
                 Hi My name is {details.name} & age is {details.age}. I have done my graduation is {details.degree}
             </Text>
-        </View >
+        </View>
     );
+
 };
+const styles = StyleSheet.create({
+    container: {
+        fontSize: 24,
+        padding: 0,
+        margin: 0,
+    }
+})
 export default AllAboutJSX;
