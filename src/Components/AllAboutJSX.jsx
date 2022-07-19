@@ -18,6 +18,10 @@ const AllAboutJSX = () => {
 };
 const styles = StyleSheet.create({
     container: {
+        // flex: 2,
+        marginTop: 300,
+        alignContent: "center",
+        justifyContent: "center",
         fontSize: 24,
         padding: 0,
         margin: 0,
