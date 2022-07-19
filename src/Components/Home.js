@@ -1,14 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import AllAboutJSX from './AllAboutJSX';
 
 const Home = () => {
     let name = "Prashant SL";
     return (
         <View style={styles.container}>
             <StatusBar style="auto" />
-            <Text style={styles.textColor}>Welcome {name} Bro!!!!</Text>
-            <Text style={styles.textColor2}>We love React Native Bro!!!!</Text>
-            <Text>Hi!!!! My name is {name} Bro!!!!</Text>
+            <AllAboutJSX />
         </View>
     );
 }
