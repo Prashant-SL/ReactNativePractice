@@ -16,7 +16,7 @@ function FlatListDemo() {
     ]
     return (
         <View>
-            <FlatList horizontal inverted showsHorizontalScrollIndicator={false} keyExtractor={(key) => {
+            <FlatList showsHorizontalScrollIndicator={false} keyExtractor={(key) => {
                 return key.index;
             }} data={names} renderItem={(e) => {
                 return (

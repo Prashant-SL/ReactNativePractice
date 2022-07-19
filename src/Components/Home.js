@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import AllAboutJSX from './AllAboutJSX';
 import FlatListDemo from './FlatListDemo';
+import ImagesDemo from './ImagesDemo';
 
 const Home = () => {
     let name = "Prashant SL";
@@ -10,6 +11,7 @@ const Home = () => {
             <StatusBar style="auto" />
             <AllAboutJSX />
             <FlatListDemo />
+            {/* <ImagesDemo /> */}
         </View>
     );
 }
