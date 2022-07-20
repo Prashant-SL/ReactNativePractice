@@ -1,10 +1,12 @@
 import { View, StyleSheet } from 'react-native';
+import Card from './src/Components/Card';
 import TouchButton from './src/Components/TouchButton';
 
 function App() {
   return (
     <View style={styles.container}>
-      <TouchButton />
+      {/* <TouchButton /> */}
+      <Card />
     </View>
   );
 }
