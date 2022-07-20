@@ -14,7 +14,8 @@ const styles = StyleSheet.create({
         position: "relative",
         flex: 1,
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        backgroundColor: "powderblue"
     },
     imageStyle: {
         height: 386,
