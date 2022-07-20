@@ -8,9 +8,9 @@ function App() {
   return (
     <View style={styles.container}>
       {/* <Home /> */}
-      {/* <ImagesDemo /> */}
+      <ImagesDemo />
       {/* <ButtonsDemo /> */}
-      <HeightNWidth />
+      {/* <HeightNWidth /> */}
     </View>
   );
 }

@@ -1,11 +1,12 @@
 import React from 'react'
-import { View, StyleSheet, Image, Text } from 'react-native'
+import { View, StyleSheet, Image, Text, ImageBackground } from 'react-native'
 
 const ImagesDemo = () => {
     return (
         <View style={styles.container}>
-            <Text>This is an image</Text>
-            <Image style={styles.imageStyle} source={require("../../assets/pexels.jpg")} />
+            <ImageBackground style={styles.imageStyle} source={{ uri: "https://reactjs.org/logo-og.png/" }}>
+                <Text style={{ color: "white", textAlign: "center", fontSize: 20 }}>This is an image</Text>
+            </ImageBackground>
         </View>
     )
 };
