@@ -1,19 +1,10 @@
 import { View, StyleSheet, FlatList } from 'react-native';
-import Card from './src/Components/Card';
-import TouchButton from './src/Components/TouchButton';
+import Challenge from './src/Components/Challenge';
 
 function App() {
-  let arr = [{ a: "a" }, { b: "b" }, { c: "c" }, { d: "d" }, { e: "e" }]
-  // let arr=[1,2,3,4,5];
   return (
     <View style={styles.container}>
-      {/* <TouchButton /> */}
-      <FlatList data={arr} renderItem={(e) => {
-        return (
-          <Card />
-        )
-      }} />
-      {/* <Card /> */}
+      <Challenge />
     </View>
   );
 }
