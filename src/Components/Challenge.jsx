@@ -66,7 +66,9 @@ const Challenge = () => {
     ]
     return (
         <View style={{ marginTop: 100, margin: 2 }}>
-            <FlatList horizontal data={arr} renderItem={({ item }) => {
+            <FlatList keyExtractor={(e) => {
+                return e.title;
+            }} horizontal showsHorizontalScrollIndicator={false} data={arr} renderItem={({ item }) => {
                 return (
                     <View style={styles.card}>
                         <Text>{item.title}</Text>
@@ -76,7 +78,9 @@ const Challenge = () => {
                     </View>
                 )
             }} />
-            <FlatList data={arr} renderItem={({ item }) => {
+            <FlatList keyExtractor={(e) => {
+                return e.title;
+            }} data={arr} renderItem={({ item }) => {
                 return (
                     <View style={styles.card}>
                         <Text>{item.title}</Text>

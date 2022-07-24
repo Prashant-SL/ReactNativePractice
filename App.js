@@ -1,10 +1,10 @@
 import { View, StyleSheet, FlatList } from 'react-native';
-import Challenge from './src/Components/Challenge';
+import Counter from './src/Components/Counter';
 
 function App() {
   return (
     <View style={styles.container}>
-      <Challenge />
+      <Counter />
     </View>
   );
 }
