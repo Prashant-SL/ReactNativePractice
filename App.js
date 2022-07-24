@@ -1,10 +1,10 @@
 import { View, StyleSheet, FlatList } from 'react-native';
-import Counter from './src/Components/Counter';
+import RandomColor from './src/Components/RandomColor';
 
 function App() {
   return (
     <View style={styles.container}>
-      <Counter />
+      <RandomColor />
     </View>
   );
 }
