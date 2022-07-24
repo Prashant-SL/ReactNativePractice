@@ -1,10 +1,10 @@
 import { View, StyleSheet, FlatList } from 'react-native';
-import RandomColor from './src/Components/RandomColor';
+import UseEffectHook from './src/Components/UseEffectHook';
 
 function App() {
   return (
     <View style={styles.container}>
-      <RandomColor />
+      <UseEffectHook />
     </View>
   );
 }
