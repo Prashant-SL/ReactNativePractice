@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, Alert } from 'react-native';
 
-const Form = () => {
+const FormData = ({ navigation }) => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const submitData = () => {
@@ -12,11 +12,12 @@ const Form = () => {
             Alert.alert("Validation Failed", "Password should be of length more than 8");
         }
         else {
-            Alert.alert("Successful", "Login Successful")
+            Alert.alert("Successful", "Login Successful");
+            navigation.navigate("Dashboard");
         }
     }
     return (
-        <View style={{ marginTop: 60 }}>
+        <View style={{ marginTop: 40 }}>
             <Text style={styles.heading}>Login Form</Text>
             <Text>Contact us regarding any query to us via contact@prashant-sl.netlify.app</Text>
             <View style={styles.inputContainer}>
@@ -58,4 +59,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Form
+export default FormData;

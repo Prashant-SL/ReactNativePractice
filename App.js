@@ -1,11 +1,19 @@
-import { View, StyleSheet, FlatList } from 'react-native';
-import Form from './src/Components/Form';
+import { View, StyleSheet } from 'react-native';
+import FormData from "./src/Components/FormData"
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Dashboard from './src/Components/Dashboard';
+
 
 function App() {
+  const Stack = createNativeStackNavigator();
   return (
-    <View>
-      <Form />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='FormData'>
+        <Stack.Screen name='FormData' component={FormData} />
+        <Stack.Screen name='Dashboard' component={Dashboard} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
