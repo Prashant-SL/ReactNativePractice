@@ -1,18 +1,16 @@
 import { View, StyleSheet, FlatList } from 'react-native';
-import UseEffectHook from './src/Components/UseEffectHook';
+import Form from './src/Components/Form';
 
 function App() {
   return (
-    <View style={styles.container}>
-      <UseEffectHook />
+    <View>
+      <Form />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    // flexDirection: "row",
     alignContent: "center",
     justifyContent: "center"
   }
