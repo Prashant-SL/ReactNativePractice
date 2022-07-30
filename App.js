@@ -1,8 +1,8 @@
 import { View, StyleSheet } from 'react-native';
 import FormData from "./src/Components/FormData"
+import Dashboard from './src/Components/Dashboard';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Dashboard from './src/Components/Dashboard';
 
 
 function App() {
